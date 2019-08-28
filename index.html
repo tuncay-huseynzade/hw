@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Routing</title>
+</head>
+  
+  <header class='mb-4'>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Routing</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Terms & Conditions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Conact</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+  </header>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 p-2">
+        <div class="p-3 bg-white shadow rounded h-100">
+          <h4 class='mb-3'>Login</h4>
+          <form action="" id='login'>
+            <input type="text" class='form-control mb-3 username' placeholder='Name'>
+            <input type="text" class='form-control mb-3 password' placeholder='Password'>
+            <button class='btn btn-primary'>Login</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="p-3 bg-white shadow rounded h-100 position-relative">
+            <div class="alert alert-danger r_error position-absolute w-100 shadow" style='top: 55px; left: 0;' role="alert">
+                <b>ERROR!</b><br>You should fill all field. <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+          <h4 class='mb-3'>Add a Route</h4>
+          <form action="" id="route" name='routeForm'>
+            <input type="text" name='start' class='form-control mb-3 start' placeholder='Start Time'>
+            <input type="text" name='duration' class='form-control mb-3 duration' placeholder='Duration (min)'>
+            <input type="text" name='train' class='form-control mb-3 train' placeholder='Train Name'>
+            <input type="number" name='price' class='form-control mb-3 price' placeholder='Price'>
+            <button class='btn btn-success routeSubmit'>Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 p-2">
+        <div class="p-3 bg-white shadow rounded h-100">
+          <table class="table table-striped info">
+            <thead class="thead-dark">
+              <tr>
+                <th class="text-nowrap">Departure Time</th>
+                <th class="text-nowrap">Arrival Time</th>
+                <th class="text-nowrap">Train name</th>
+                <th class="text-nowrap">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>07:45</td>
+                <td>12:15</td>
+                <td>Baku-Lenkoran</td>
+                <td>₼ <b>55</b> (buy)</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-3 p-2">
+        <div class="p-3 bg-white shadow rounded h-100">
+          A small block
+        </div>
+      </div>
+      <div class="col-lg-6 p-2">
+        <div class="p-3 bg-white shadow rounded h-100">
+          A large block
+        </div>
+      </div>
+      <div class="col-lg-3 p-2">
+        <div class="p-3 bg-white shadow rounded h-100">
+          A small block
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+<body>
+
+</body>
+</html>

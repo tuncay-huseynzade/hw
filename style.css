@@ -1,0 +1,9 @@
+body{
+    background: url('https://picsum.photos/id/618/1500/1200') no-repeat;
+    background-position: bottom bottom;
+    background-size: cover;
+  }
+  
+  .row>*{
+    min-height: 333px;
+  }
